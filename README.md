@@ -10,6 +10,18 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+
+- **Next.js**: 13.5.4 (App Router)
+- **React**: 18.2.0
+- **Clerk**: 6.8.0 (Authentication)
+- **Prisma**: 5.22.0 (ORM)
+- **Mux**: 7.3.1 (Video Processing)
+- **React Quill**: 2.0.0 (Rich Text Editor)
+- **Stripe**: 13.7.0 (Payments)
+- **Uploadthing**: 5.7.4 (File Uploads)
+- **Tailwind CSS**: 3.3.3 (Styling)
+- **TypeScript**: 5.2.2
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
