@@ -31,4 +31,4 @@ export async function PATCH(
         console.log("[COURSE_ID]", error);
         return new NextResponse("Internal Error", { status: 500 });
     }
-}
+} 

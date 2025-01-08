@@ -9,6 +9,12 @@ import { CoursesList } from "@/components/courses-list";
 
 import { Categories } from "./_components/categories";
 
+
+// type SearchPageProps = {
+//   searchParams?: { title?: string; categoryId?: string };
+// };
+
+
 interface SearchPageProps {
   searchParams?: {
     title?: string;
@@ -18,7 +24,7 @@ interface SearchPageProps {
 
 const SearchPage = async ({ searchParams =  {} }: SearchPageProps) => {
   const { userId } = await auth();
-  const searchp = await searchParams;
+  const searchp =  searchParams;
 
   if (!userId) {
     return redirect("/");

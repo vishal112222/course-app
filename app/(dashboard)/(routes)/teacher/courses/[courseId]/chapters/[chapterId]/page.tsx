@@ -20,7 +20,7 @@ interface ChapterIdPageProps {
   };
 }
 
-const ChapterIdPage: React.FC<ChapterIdPageProps> = async ({ params }) => {
+const ChapterIdPage = async ({ params }:any) => {
   const { courseId, chapterId } = await params;
   const { userId } = await auth();
 
@@ -68,24 +68,16 @@ const ChapterIdPage: React.FC<ChapterIdPageProps> = async ({ params }) => {
         <div>
         <Link
             href={`/teacher/courses/${courseId}`}
-            className="flex items-center text-sm hover:opacity-75 transition mb-6"
+            className="flex items-center text-sm hover:opacity-75 transition mb-6 "
             legacyBehavior
           >
-            <span className="flex items-center">
+            <span className="flex items-center ">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to course setup
             </span>
           </Link>
 
-          {/* <Link
-          
-            href={`/teacher/courses/${courseId}`}
-            className="flex items-center text-sm hover:opacity-75 transition mb-6"
-            legacyBehavior>
-            <ArrowLeft className="h-4 w-4 mr-2" />
-             Back to course setup
-            
-          </Link> */}
+         
           </div>
           <div className="flex items-center justify-between w-full">
             <div className="flex flex-col gap-y-2">

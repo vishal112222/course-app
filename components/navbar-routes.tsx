@@ -20,7 +20,10 @@ export const NavbarRoutes : React.FC<NavbarRoutesProps> = ({
   const isPlayerPage = pathname?.includes("/chapters");
   const isSearchPage = pathname === "/search";
   const isTeacher = currentProfile?.role === "ADMIN" || currentProfile?.role === "TEACHER";
-
+  // console.log(isTeacher)
+  // console.log("player page",isPlayerPage)
+  // console.log("Teacher pge", isTeacherPage)
+ 
   return (<>
     {isSearchPage && (
       <div className="hidden md:block">
@@ -35,10 +38,10 @@ export const NavbarRoutes : React.FC<NavbarRoutesProps> = ({
             Exit
           </Button>
         </Link>
-      ) : isTeacher ? (
+      ) : !isTeacher ? (
         <Link href="/teacher/courses" legacyBehavior>
           <Button size="sm" variant="ghost">
-            Teacher Mode
+            Teacher Mode 
           </Button>
         </Link>
       ) : null}

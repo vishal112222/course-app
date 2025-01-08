@@ -9,12 +9,16 @@ type GetCourses = {
   userId: string;
   title?: string;
   categoryId?: string;
+  purchases?: number;
+
 };
 
 export const getCourses = async ({
   userId,
   title,
-  categoryId
+  categoryId,
+  purchases,
+
 }: GetCourses): Promise<CourseWithProgressWithCategory[]> => {
   try {
     const courses = await db.course.findMany({

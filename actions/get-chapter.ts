@@ -13,7 +13,7 @@ export const getChapter = async ({
     userId, 
     courseId, 
     chapterId 
-}: getChapterProps) => {
+}: any) => {
     try {
 
         const purchase = await db.purchase.findUnique({

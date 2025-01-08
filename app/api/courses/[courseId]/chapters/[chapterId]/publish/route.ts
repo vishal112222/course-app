@@ -38,7 +38,8 @@ export async function PATCH(
         chapterId: chapterId,
       },
     });
-
+    
+    // console.log("mux data",muxData)
     if (
       !chapter ||
       !muxData ||

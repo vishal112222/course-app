@@ -14,7 +14,7 @@ const CourseLayout = async ({
   params
 }: {
   children: React.ReactNode;
-  params: { courseId: string };
+  params: any;
 }) => {
   const { userId } = await auth();
   const { courseId } = await params;

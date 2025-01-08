@@ -42,7 +42,7 @@ async function main() {
         { name: "Fitness" },
         { name: "Accounting" },
         { name: "Computer Science" },
-        { name: "Filming" },
+        { name: "Filming" },    
         { name: "Engineering" },
         
         
